@@ -1,0 +1,46 @@
+body {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    margin: 4rem auto;
+}
+header h1, p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-container {
+    display: flex;
+}
+
+section {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 10px;
+}
+section label {
+    margin: 5px 0;
+}
+section input {
+    margin: 5px 0;
+    width: 50px;
+    border-radius: 2px;
+    border: none;
+}
+section button {
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: chartreuse;
+    box-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        display: block;
+    }
+}
