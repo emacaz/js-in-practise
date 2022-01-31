@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura de un Isósceles</title>
+    <link rel="stylesheet" href="./isotri.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Altura de un Triángulo Isósceles</h1>
+    </header>
+
+    <section>
+        <div class="data-container">
+            <h2>Calcula la altura de un Triángulo Isósceles:</h2>
+            <form>
+                <input type="number" id="lado1" placeholder="Lado 1">
+                <input type="number" id="lado2" placeholder="Lado 2">
+                <input type="number" id="lado3" placeholder="Lado 3">
+
+                <button type="button" onclick="calcularAltura()">Calcular</button>
+            </form>
+        </div>  
+
+        <div class="drawing-container">
+            <h2>Figura</h2>
+
+            <canvas id="canvas"></canvas>
+        </div>
+    </section>
+
+    <script src="./isotri.js"></script>
+</body>
+</html>
