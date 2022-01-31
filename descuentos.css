@@ -1,5 +1,69 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 * {
     background-color: #77DD77;
     color: rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    border: 1px solid black;
+    margin: auto 3rem;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+
+section h2 {
+    text-align: center;
+}
+
+form div {
+    display: flex;
+    margin-top: 1rem;
+}
+
+form label {
+    margin-right: 7px;
+}
+
+form input {
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid  black;
+}
+
+form button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: rgb(71, 141, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+#resultP {
+    font-size: 20px;
+    text-align: center;
 }
