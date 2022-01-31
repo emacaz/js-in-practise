@@ -1,4 +1,7 @@
-function draw() {
+let base;
+
+function draw(base) {
+
     const canvas = document.getElementById("canvas");
 
     if (!canvas.getContext) {
@@ -8,11 +11,11 @@ function draw() {
 
     // set line stroke and line width
     ctx.strokeStyle = 'black';
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 2;
 
     // draw a red line
     ctx.beginPath();
-    ctx.moveTo(100, 100);
+    ctx.moveTo(20, 100);
     ctx.lineTo(300, 100);
     ctx.stroke();
 
@@ -44,8 +47,7 @@ function alturaIsosceles(lado1, lado2, lado3) {
         c = lado1;
 
     } else {
-        console.log("Es Escaleno");
-        return null;
+        alert("Es Escaleno");
     }
 
     h = Math.sqrt(( Math.pow(a, 2) ) - ( ( Math.pow(c, 2) ) / 4 ));
@@ -68,6 +70,6 @@ function calcularAltura() {
 
     const altura = alturaIsosceles(lado1, lado2, lado3);
     alert(altura);
-    draw();
 
+    draw(base)
 }
