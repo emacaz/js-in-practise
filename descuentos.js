@@ -1,5 +1,14 @@
+// CUPONES
+const cupones = [
+    navidad = 20,
+    semanasanta = 30,
+    medioano = 40,
+    reyes = 50,
+];
+
+
 function calcularPrecioConDescuento(precio, descuento) {
-    
+
     const porcentajePrecioConDescuento = 100 - descuento;
     const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
 

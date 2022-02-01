@@ -36,6 +36,8 @@ section h2 {
 
 form div {
     display: flex;
+    align-items: center;
+    justify-content: end;
     margin-top: 1rem;
 }
 
@@ -61,6 +63,14 @@ form button {
     color: white;
     padding: 10px 0;
     font-size: 16px;
+}
+
+#couponApply {
+    margin: 1rem;
+    padding: 4px;
+    font-size: 14px;
+    width: unset;
+    background-color: darkgreen;
 }
 
 #resultP {
