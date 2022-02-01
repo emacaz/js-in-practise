@@ -40,7 +40,7 @@ function existCoupon() {
 
     const existCoupon = document.getElementById("existCoupon");
 
-    for (i = 0; i < cupones.length; i++){
+    for (let i = 0; i < cupones.length; i++){
         if (couponValue === cupones[i]){
             if (couponValue === "navidad") {
                 onClickButtonPriceDiscount(10);
